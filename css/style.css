@@ -1,6 +1,5 @@
 body {
   background: #c51431;
-  margin: 0;
 }
 
 #particles-js {
@@ -18,13 +17,20 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  text-align: center;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content svg {
@@ -32,12 +38,13 @@ body {
 }
 
 .mail-to {
-  width: 250px;
+  width: 300px;
   position: absolute;
   bottom: 25%;
   font-family: courier;
   font-size: 18px;
   letter-spacing: 2px;
+  text-align: center;
   margin: auto;
 }
 
@@ -52,9 +59,14 @@ body {
   bottom: 15%;
   margin: auto;
   font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-icons a {
