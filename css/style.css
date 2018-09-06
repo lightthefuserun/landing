@@ -41,7 +41,8 @@ body {
   width: 300px;
   position: absolute;
   bottom: 25%;
-  font-family: courier;
+  font-family: 'Cutive Mono', monospace;
+  /*font-family: courier;*/
   font-size: 18px;
   letter-spacing: 2px;
   text-align: center;
@@ -50,7 +51,9 @@ body {
 
 .mail-to a, .mail-to a:hover {
   color: #FFFFFF;
-  text-decoration: underline;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 2px;
+  text-decoration: none;
 }
 
 .social-icons {
