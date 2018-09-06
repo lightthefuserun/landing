@@ -15,14 +15,52 @@ body {
 }
 
 .content {
-  width: 200px;
-  height: 250px;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.content svg {
+  width: 200px;
+}
+
+.mail-to {
+  width: 250px;
+  position: absolute;
+  bottom: 25%;
+  font-family: courier;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: auto;
+}
+
+.mail-to a, .mail-to a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.social-icons {
+  width: 200px;
+  position: absolute;
+  bottom: 15%;
+  margin: auto;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #FFFFFF;
+}
+
+.social-icons a:hover {
+  color: #989898;
 }
