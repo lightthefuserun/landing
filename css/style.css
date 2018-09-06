@@ -14,9 +14,12 @@ body {
 }
 
 .content {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,13 +43,15 @@ body {
 .mail-to {
   width: 300px;
   position: absolute;
+  left: 50%;
   bottom: 25%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   font-family: 'Cutive Mono', monospace;
-  /*font-family: courier;*/
   font-size: 18px;
   letter-spacing: 2px;
   text-align: center;
-  margin: auto;
 }
 
 .mail-to a, .mail-to a:hover {
@@ -59,8 +64,11 @@ body {
 .social-icons {
   width: 200px;
   position: absolute;
+  left: 50%;
   bottom: 15%;
-  margin: auto;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
