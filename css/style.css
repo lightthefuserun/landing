@@ -13,7 +13,8 @@ body {
   background-position: 50% 50%;
 }
 
-.content {
+.logo {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -36,11 +37,11 @@ body {
           flex-direction: column;
 }
 
-.content svg {
+.logo svg {
   width: 200px;
 }
 
-.mail-to {
+.emailContact {
   width: 300px;
   position: absolute;
   left: 50%;
@@ -54,14 +55,14 @@ body {
   text-align: center;
 }
 
-.mail-to a, .mail-to a:hover {
+.emailContact a, .emailContact a:hover {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
   padding-bottom: 2px;
   text-decoration: none;
 }
 
-.social-icons {
+.socialIcons {
   width: 200px;
   height: 30px;
   position: absolute;
@@ -81,10 +82,10 @@ body {
           align-items: center;
 }
 
-.social-icons a {
+.socialIcons a {
   color: #FFFFFF;
 }
 
-.social-icons a:hover {
+.socialIcons a:hover {
   color: #D6D6D6;
 }
