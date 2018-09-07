@@ -1,4 +1,4 @@
-function toggleFuse() {
+function toggleFuse(timeout) {
   if (switchedOn) {
     var color1 = new GColor(251, 175, 64);
     var color2 = new GColor(255, 255, 255);
@@ -13,10 +13,11 @@ function toggleFuse() {
   var pointer = 0;
 
   function rotateColors() {
+      timeout = (typeof timeout === 'undefined')?1:timeout;
       var currentColor = range[pointer];
       fuseBulb.style.fill = "rgb("+currentColor.r+","+currentColor.g+","+currentColor.b+")";
       pointer++;
-      if (pointer < range.length) window.setTimeout(rotateColors, 1);
+      if (pointer < range.length) window.setTimeout(rotateColors, timeout);
   };
 
   rotateColors()
@@ -47,8 +48,6 @@ var switchedOn = false;
 
 logo.addEventListener('click', toggleFuse);
 
-window.setTimeout(function() {
-  toggleFuse();
-}, 2000);
+toggleFuse(50);
 
 particlesJS.load('particles-js', 'js/particles.json');
