@@ -48,6 +48,6 @@ var switchedOn = false;
 
 logo.addEventListener('click', toggleFuse);
 
-toggleFuse(50);
+toggleFuse(10);
 
 particlesJS.load('particles-js', 'js/particles.json');
